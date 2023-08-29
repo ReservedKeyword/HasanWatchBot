@@ -1,0 +1,38 @@
+{
+  "name": "hasan-watch-bot",
+  "license": "MIT",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf build",
+    "cleanbuild": "pnpm clean && pnpm build",
+    "images:remake": "rimraf images && mkdir images",
+    "start": "node build/boot"
+  },
+  "dependencies": {
+    "@jimp/plugin-color": "^0.22.10",
+    "@tensorflow/tfjs": "^4.10.0",
+    "@tensorflow/tfjs-node": "^4.10.0",
+    "axios": "^1.4.0",
+    "fp-ts": "^2.16.1",
+    "fp-ts-contrib": "^0.1.29",
+    "fp-ts-simple-spawn": "^1.0.1",
+    "jimp": "^0.22.10",
+    "m3u8-parser": "^7.1.0",
+    "sqlite": "^5.0.1",
+    "sqlite3": "^5.1.6",
+    "tesseract.js": "^4.1.1",
+    "upscaler": "1.0.0-beta.17",
+    "youtubei": "^1.1.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.1",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.1.6"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "fp-ts-simple-spawn@1.0.1": "patches/fp-ts-simple-spawn@1.0.1.patch"
+    }
+  }
+}

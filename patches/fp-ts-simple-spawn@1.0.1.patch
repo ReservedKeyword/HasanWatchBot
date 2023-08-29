@@ -1,0 +1,16 @@
+diff --git a/package.json b/package.json
+index 594ae95e579ca52bdfcd7239a72cfe44a02ec0e7..e4484e10e5f63e6f69470bfb230f9c9f74885663 100644
+--- a/package.json
++++ b/package.json
+@@ -8,8 +8,9 @@
+     "fp-ts": "^2.9.5"
+   },
+   "exports": {
+-    "errors": {
+-      "require": "./dist/errors.js"
++    ".": {
++      "default": "./dist/index.js",
++      "types": ["./dist/index.d.ts"]
+     }
+   },
+   "dependencies": {},

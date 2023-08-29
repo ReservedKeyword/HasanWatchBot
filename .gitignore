@@ -1,0 +1,6 @@
+.idea
+node_modules
+*.traineddata
+build
+images/*.png
+database.db
