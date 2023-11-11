@@ -13,7 +13,7 @@
     "@jimp/plugin-color": "^0.22.10",
     "@tensorflow/tfjs": "^4.10.0",
     "@tensorflow/tfjs-node": "^4.10.0",
-    "axios": "^1.4.0",
+    "axios": "^1.6.0",
     "fp-ts": "^2.16.1",
     "fp-ts-contrib": "^0.1.29",
     "fp-ts-simple-spawn": "^1.0.1",
